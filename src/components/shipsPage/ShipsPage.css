@@ -19,8 +19,8 @@
 
 .cardDiv {
   height: 99%;
-  width: 12rem;
   border-radius: 2rem;
+  width: 12rem;
   background-color: #797979;
   border-bottom: 1rem;
 }
@@ -33,5 +33,6 @@
 .shipCard {
   color: white;
   height: 18rem;
+  width: 12rem;
   margin: 1rem;
 }
