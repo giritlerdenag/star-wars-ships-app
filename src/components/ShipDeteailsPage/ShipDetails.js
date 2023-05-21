@@ -19,7 +19,7 @@ function ShipDetails() {
       }
     };
     fetchShipDetailData();
-  }, []);
+  },);
 
   return (
     <div className="shipDetailPage">
