@@ -19,7 +19,7 @@ https://star-wars-ships-app.netlify.app/
 
 ```sh
 
-git clone https://github.com/akifemresenol1/fmss-frontend-final-case.git
+git clone https://github.com/giritlerdenag/star-wars-ships-app.git
 
 ```
 
