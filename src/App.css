@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black !important;
+}
+
+.App {
+  padding-top: 8rem;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.shipDetailPage {
+  height: 100%;
+  width: 100%;
+}
+
+
+.grid .row {
+  flex-wrap: nowrap !important;
+}
+
+.header {
+  text-align: center;
+  color: #f5d033;
+  margin-bottom: 2rem;
+}

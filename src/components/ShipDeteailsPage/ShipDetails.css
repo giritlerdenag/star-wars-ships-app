@@ -1,0 +1,24 @@
+.shipImg {
+    height: 15rem;
+    border-radius: 2rem;
+}
+
+.detailImgDiv {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.backButton {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #f5d033;
+}
+
+
+.shipInfoDiv {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}

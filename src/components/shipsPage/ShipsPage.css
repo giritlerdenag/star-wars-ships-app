@@ -1,0 +1,37 @@
+.cardImg {
+  height: 6rem;
+  border-radius: 2rem;
+  padding-top: 5px;
+}
+
+.shipInfo {
+  padding: 0.5rem;
+  font-size: smaller;
+}
+
+.loadMoreButton {
+  margin-bottom: 5rem;
+}
+
+.row-cols-lg-auto {
+  margin-bottom: 2rem;
+}
+
+.cardDiv {
+  height: 99%;
+  width: 12rem;
+  border-radius: 2rem;
+  background-color: #797979;
+  border-bottom: 1rem;
+}
+
+.shipImgDiv {
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.shipCard {
+  color: white;
+  height: 18rem;
+  margin: 1rem;
+}
