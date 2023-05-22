@@ -7,7 +7,7 @@ import ShipDetailsPage from "../ShipDeteailsPage/ShipDetails";
 function CardItem(props) {
   return (
     <>
-      <Col md={2} className="shipCard">
+      <Col xl="2" md="3" xs={{ offset: 0, size: 5}} className="shipCard">
         <Link
           element={<ShipDetailsPage></ShipDetailsPage>}
           to={props.id}

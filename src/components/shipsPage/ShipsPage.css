@@ -1,5 +1,5 @@
 .cardImg {
-  height: 6rem;
+  height: 5rem;
   border-radius: 2rem;
   padding-top: 5px;
 }
@@ -18,9 +18,10 @@
 }
 
 .cardDiv {
-  height: 99%;
+  position: absolute;
+  height: 100%;
   border-radius: 2rem;
-  width: 12rem;
+  width: 100%;
   background-color: #797979;
   border-bottom: 1rem;
 }
@@ -31,8 +32,9 @@
 }
 
 .shipCard {
+  position: relative;
   color: white;
   height: 18rem;
-  width: 12rem;
+  width: 10rem;
   margin: 1rem;
 }

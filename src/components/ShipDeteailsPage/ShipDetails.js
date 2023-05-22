@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { getStarshipDetail } from "../../api/ships";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
 
 function ShipDetails() {
   const { id } = useParams();

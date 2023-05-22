@@ -8,7 +8,7 @@ import {
   searchStarship,
   getStarshipId,
 } from "../../api/ships";
-import { Button, Container, Row, Col, Input } from "reactstrap";
+import { Button, Container, Row, Col, Input, InputGroup } from "reactstrap";
 
 
 //IMPORT COMPONENTS
@@ -64,37 +64,35 @@ function Card() {
 
   return (
     <div>
-      
+
       <h2 className="header">WARS DO NOT MAKE ONE GREAT...</h2>
       <Container>
-        <Row className="row-cols-lg-auto g-3 align-items-center">
+        <Row className="row-cols-lg-auto align-items-center">
           <Col
             md={{
               offset: 4,
               size: 2,
             }}
-            sm="12"
+            xs={{
+              offset: 1,
+              size: 10,
+            }}
           >
-            Name / Model:
-          </Col>
-          <Col>
-            <Input onChange={handleChange}></Input>
-          </Col>
-          <Col>
-            <Button
-              onClick={() => {
+            <InputGroup>
+              <Input placeholder="Name / Model" onChange={handleChange} />
+              <Button onClick={() => {
                 filter(inputQuery);
-              }}
-            >
-              Filter
-            </Button>
+              }}>
+                Filter
+              </Button>
+            </InputGroup>
           </Col>
         </Row>
         <Row>
           <hr />
         </Row>
       </Container>
-      <Container>
+      <Container fluid="xs">
         <Row>
           {ships.map((ship, i) => {
             const id = getStarshipId(ship.url);
@@ -107,7 +105,10 @@ function Card() {
               offset: 10,
               size: 1,
             }}
-            sm="12"
+            xs={{
+              offset: 7,
+              size: 5,
+            }}
           >
             <Button
               className="loadMoreButton"
