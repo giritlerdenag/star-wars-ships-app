@@ -1,5 +1,5 @@
 //import css
-import "./ShipsPage.css"
+import "./ShipsPage.css";
 //IMPORT ELEMENT
 import React, { useEffect, useState } from "react";
 import {
@@ -9,7 +9,6 @@ import {
   getStarshipId,
 } from "../../api/ships";
 import { Button, Container, Row, Col, Input, InputGroup } from "reactstrap";
-
 
 //IMPORT COMPONENTS
 
@@ -62,9 +61,14 @@ function Card() {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <div>
-
       <h2 className="header">WARS DO NOT MAKE ONE GREAT...</h2>
       <Container>
         <Row className="row-cols-lg-auto align-items-center">
@@ -80,9 +84,11 @@ function Card() {
           >
             <InputGroup>
               <Input placeholder="Name / Model" onChange={handleChange} />
-              <Button onClick={() => {
-                filter(inputQuery);
-              }}>
+              <Button
+                onClick={() => {
+                  filter(inputQuery);
+                }}
+              >
                 Filter
               </Button>
             </InputGroup>
@@ -110,14 +116,25 @@ function Card() {
               size: 5,
             }}
           >
-            <Button
-              className="loadMoreButton"
-              onClick={() => {
-                handleLoadMoreClick(next);
-              }}
-            >
-              Load More...
-            </Button>
+            {next == null ? (
+              <Button
+                className="loadMoreButton"
+                onClick={() => {
+                  scrollToTop();
+                }}
+              >
+                Back To Top
+              </Button>
+            ) : (
+              <Button
+                className="loadMoreButton"
+                onClick={() => {
+                  handleLoadMoreClick(next);
+                }}
+              >
+                Load More...
+              </Button>
+            )}
           </Col>
         </Row>
       </Container>

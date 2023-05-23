@@ -1,11 +1,8 @@
 .shipImg {
-    height: 15rem;
-    border-radius: 2rem;
-}
-
-.detailImgDiv {
-    text-align: center;
+    border-radius: 4rem;
+    width: 100%;
     padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .backButton {
@@ -17,6 +14,7 @@
 
 .shipInfoDiv {
     text-align: center;
+    margin-bottom: 8rem;
 }
 
 li {
